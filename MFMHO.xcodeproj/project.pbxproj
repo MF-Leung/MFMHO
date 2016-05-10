@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2FF1831CE2027F004AC962 /* MFMHOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1221CE2027F004AC962 /* MFMHOAppDelegate.m */; };
+		0C2FF1841CE2027F004AC962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF1231CE2027F004AC962 /* Assets.xcassets */; };
+		0C2FF1851CE2027F004AC962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF1241CE2027F004AC962 /* LaunchScreen.storyboard */; };
+		0C2FF1861CE2027F004AC962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF1261CE2027F004AC962 /* Main.storyboard */; };
+		0C2FF1871CE2027F004AC962 /* MFMHODecoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF12D1CE2027F004AC962 /* MFMHODecoModel.m */; };
+		0C2FF1881CE2027F004AC962 /* MFMHOEquipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF12F1CE2027F004AC962 /* MFMHOEquipModel.m */; };
+		0C2FF1891CE2027F004AC962 /* MFMHOSkillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1311CE2027F004AC962 /* MFMHOSkillModel.m */; };
+		0C2FF18A1CE2027F004AC962 /* MFMHOSkillRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1331CE2027F004AC962 /* MFMHOSkillRankModel.m */; };
+		0C2FF18B1CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1361CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m */; };
+		0C2FF18C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1381CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m */; };
+		0C2FF18D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF13A1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m */; };
+		0C2FF18E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF13C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m */; };
+		0C2FF18F1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF13E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m */; };
+		0C2FF1901CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1401CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m */; };
+		0C2FF1911CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1431CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m */; };
+		0C2FF1921CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1451CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m */; };
+		0C2FF1931CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1471CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m */; };
+		0C2FF1941CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1491CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m */; };
+		0C2FF1951CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF14B1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m */; };
+		0C2FF1961CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF14D1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m */; };
+		0C2FF1971CE2027F004AC962 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF14E1CE2027F004AC962 /* Info.plist */; };
+		0C2FF1981CE2027F004AC962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF14F1CE2027F004AC962 /* main.m */; };
+		0C2FF1991CE2027F004AC962 /* MFMHOSkillSelectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1521CE2027F004AC962 /* MFMHOSkillSelectListViewController.m */; };
+		0C2FF19A1CE2027F004AC962 /* MFMHOSkillStoneListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1551CE2027F004AC962 /* MFMHOSkillStoneListViewController.m */; };
+		0C2FF19B1CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1571CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m */; };
+		0C2FF19C1CE2027F004AC962 /* MFMHOSkillStoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1591CE2027F004AC962 /* MFMHOSkillStoneModel.m */; };
+		0C2FF19D1CE2027F004AC962 /* MFMHOSkillStonePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF15B1CE2027F004AC962 /* MFMHOSkillStonePickerView.m */; };
+		0C2FF19E1CE2027F004AC962 /* test.db in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF15C1CE2027F004AC962 /* test.db */; };
+		0C2FF19F1CE2027F004AC962 /* MFMHODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF15F1CE2027F004AC962 /* MFMHODatabase.m */; };
+		0C2FF1A01CE2027F004AC962 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1631CE2027F004AC962 /* FMDatabase.m */; };
+		0C2FF1A11CE2027F004AC962 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1651CE2027F004AC962 /* FMDatabaseAdditions.m */; };
+		0C2FF1A21CE2027F004AC962 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1671CE2027F004AC962 /* FMDatabasePool.m */; };
+		0C2FF1A31CE2027F004AC962 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1691CE2027F004AC962 /* FMDatabaseQueue.m */; };
+		0C2FF1A41CE2027F004AC962 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF16C1CE2027F004AC962 /* FMResultSet.m */; };
+		0C2FF1A51CE2027F004AC962 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF16F1CE2027F004AC962 /* MJConst.m */; };
+		0C2FF1A61CE2027F004AC962 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1721CE2027F004AC962 /* MJFoundation.m */; };
+		0C2FF1A71CE2027F004AC962 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1741CE2027F004AC962 /* MJIvar.m */; };
+		0C2FF1A81CE2027F004AC962 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1761CE2027F004AC962 /* MJType.m */; };
+		0C2FF1A91CE2027F004AC962 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1781CE2027F004AC962 /* NSObject+MJCoding.m */; };
+		0C2FF1AA1CE2027F004AC962 /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF17A1CE2027F004AC962 /* NSObject+MJIvar.m */; };
+		0C2FF1AB1CE2027F004AC962 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF17C1CE2027F004AC962 /* NSObject+MJKeyValue.m */; };
+		0C2FF1AC1CE2027F004AC962 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF17E1CE2027F004AC962 /* SVProgressHUD.bundle */; };
+		0C2FF1AD1CE2027F004AC962 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */; };
+		0C2FF1AE1CE2027F004AC962 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1821CE2027F004AC962 /* ViewController.m */; };
+		47EC18101C6202910053F0BD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EC180F1C6202910053F0BD /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C2FF1211CE2027F004AC962 /* MFMHOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOAppDelegate.h; sourceTree = "<group>"; };
+		0C2FF1221CE2027F004AC962 /* MFMHOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOAppDelegate.m; sourceTree = "<group>"; };
+		0C2FF1231CE2027F004AC962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C2FF1251CE2027F004AC962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C2FF1271CE2027F004AC962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C2FF1291CE2027F004AC962 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0C2FF12A1CE2027F004AC962 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0C2FF12C1CE2027F004AC962 /* MFMHODecoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHODecoModel.h; sourceTree = "<group>"; };
+		0C2FF12D1CE2027F004AC962 /* MFMHODecoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHODecoModel.m; sourceTree = "<group>"; };
+		0C2FF12E1CE2027F004AC962 /* MFMHOEquipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipModel.h; sourceTree = "<group>"; };
+		0C2FF12F1CE2027F004AC962 /* MFMHOEquipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipModel.m; sourceTree = "<group>"; };
+		0C2FF1301CE2027F004AC962 /* MFMHOSkillModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillModel.h; sourceTree = "<group>"; };
+		0C2FF1311CE2027F004AC962 /* MFMHOSkillModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillModel.m; sourceTree = "<group>"; };
+		0C2FF1321CE2027F004AC962 /* MFMHOSkillRankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillRankModel.h; sourceTree = "<group>"; };
+		0C2FF1331CE2027F004AC962 /* MFMHOSkillRankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillRankModel.m; sourceTree = "<group>"; };
+		0C2FF1351CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutBasicTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF1361CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutBasicTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF1371CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutSkillDetailModel.h; sourceTree = "<group>"; };
+		0C2FF1381CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutSkillDetailModel.m; sourceTree = "<group>"; };
+		0C2FF1391CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutSkillDetailTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF13A1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutSkillDetailTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF13B1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutSkillLaunchedTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF13C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF13D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutSkillTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF13E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutSkillTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF13F1CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetLayoutViewController.h; sourceTree = "<group>"; };
+		0C2FF1401CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetLayoutViewController.m; sourceTree = "<group>"; };
+		0C2FF1421CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchMainViewController.h; sourceTree = "<group>"; };
+		0C2FF1431CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchMainViewController.m; sourceTree = "<group>"; };
+		0C2FF1441CE2027F004AC962 /* MFMHOEquipSetSearchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchQuery.h; sourceTree = "<group>"; };
+		0C2FF1451CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchQuery.m; sourceTree = "<group>"; };
+		0C2FF1461CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchResultModel.h; sourceTree = "<group>"; };
+		0C2FF1471CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchResultModel.m; sourceTree = "<group>"; };
+		0C2FF1481CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchResultTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF1491CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchResultTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF14A1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchResultViewController.h; sourceTree = "<group>"; };
+		0C2FF14B1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchResultViewController.m; sourceTree = "<group>"; };
+		0C2FF14C1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.h; sourceTree = "<group>"; };
+		0C2FF14D1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m; sourceTree = "<group>"; };
+		0C2FF14E1CE2027F004AC962 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2FF14F1CE2027F004AC962 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C2FF1511CE2027F004AC962 /* MFMHOSkillSelectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillSelectListViewController.h; sourceTree = "<group>"; };
+		0C2FF1521CE2027F004AC962 /* MFMHOSkillSelectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillSelectListViewController.m; sourceTree = "<group>"; };
+		0C2FF1541CE2027F004AC962 /* MFMHOSkillStoneListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillStoneListViewController.h; sourceTree = "<group>"; };
+		0C2FF1551CE2027F004AC962 /* MFMHOSkillStoneListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillStoneListViewController.m; sourceTree = "<group>"; };
+		0C2FF1561CE2027F004AC962 /* MFMHOSkillStoneMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillStoneMainViewController.h; sourceTree = "<group>"; };
+		0C2FF1571CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillStoneMainViewController.m; sourceTree = "<group>"; };
+		0C2FF1581CE2027F004AC962 /* MFMHOSkillStoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillStoneModel.h; sourceTree = "<group>"; };
+		0C2FF1591CE2027F004AC962 /* MFMHOSkillStoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillStoneModel.m; sourceTree = "<group>"; };
+		0C2FF15A1CE2027F004AC962 /* MFMHOSkillStonePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillStonePickerView.h; sourceTree = "<group>"; };
+		0C2FF15B1CE2027F004AC962 /* MFMHOSkillStonePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillStonePickerView.m; sourceTree = "<group>"; };
+		0C2FF15C1CE2027F004AC962 /* test.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.db; sourceTree = "<group>"; };
+		0C2FF15E1CE2027F004AC962 /* MFMHODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHODatabase.h; sourceTree = "<group>"; };
+		0C2FF15F1CE2027F004AC962 /* MFMHODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHODatabase.m; sourceTree = "<group>"; };
+		0C2FF1621CE2027F004AC962 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0C2FF1631CE2027F004AC962 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0C2FF1641CE2027F004AC962 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0C2FF1651CE2027F004AC962 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0C2FF1661CE2027F004AC962 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0C2FF1671CE2027F004AC962 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0C2FF1681CE2027F004AC962 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0C2FF1691CE2027F004AC962 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0C2FF16A1CE2027F004AC962 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0C2FF16B1CE2027F004AC962 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0C2FF16C1CE2027F004AC962 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0C2FF16E1CE2027F004AC962 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		0C2FF16F1CE2027F004AC962 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		0C2FF1701CE2027F004AC962 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		0C2FF1711CE2027F004AC962 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		0C2FF1721CE2027F004AC962 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		0C2FF1731CE2027F004AC962 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		0C2FF1741CE2027F004AC962 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		0C2FF1751CE2027F004AC962 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		0C2FF1761CE2027F004AC962 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		0C2FF1771CE2027F004AC962 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		0C2FF1781CE2027F004AC962 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		0C2FF1791CE2027F004AC962 /* NSObject+MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJIvar.h"; sourceTree = "<group>"; };
+		0C2FF17A1CE2027F004AC962 /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
+		0C2FF17B1CE2027F004AC962 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		0C2FF17C1CE2027F004AC962 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		0C2FF17E1CE2027F004AC962 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		0C2FF17F1CE2027F004AC962 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		0C2FF1811CE2027F004AC962 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C2FF1821CE2027F004AC962 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47EC17B21C61A30B0053F0BD /* MFMHO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFMHO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EC180F1C6202910053F0BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47EC17AF1C61A30B0053F0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC18101C6202910053F0BD /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2FF1201CE2027F004AC962 /* MFMHO */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1211CE2027F004AC962 /* MFMHOAppDelegate.h */,
+				0C2FF1221CE2027F004AC962 /* MFMHOAppDelegate.m */,
+				0C2FF1231CE2027F004AC962 /* Assets.xcassets */,
+				0C2FF1241CE2027F004AC962 /* LaunchScreen.storyboard */,
+				0C2FF1261CE2027F004AC962 /* Main.storyboard */,
+				0C2FF1281CE2027F004AC962 /* Config */,
+				0C2FF12B1CE2027F004AC962 /* DataModel */,
+				0C2FF1341CE2027F004AC962 /* EquipSetLayout */,
+				0C2FF1411CE2027F004AC962 /* EquipSetSearch */,
+				0C2FF14E1CE2027F004AC962 /* Info.plist */,
+				0C2FF14F1CE2027F004AC962 /* main.m */,
+				0C2FF1501CE2027F004AC962 /* SkillList */,
+				0C2FF1531CE2027F004AC962 /* SkillStone */,
+				0C2FF15C1CE2027F004AC962 /* test.db */,
+				0C2FF15D1CE2027F004AC962 /* Tools */,
+				0C2FF1601CE2027F004AC962 /* Vendor */,
+				0C2FF1811CE2027F004AC962 /* ViewController.h */,
+				0C2FF1821CE2027F004AC962 /* ViewController.m */,
+			);
+			path = MFMHO;
+			sourceTree = "<group>";
+		};
+		0C2FF1281CE2027F004AC962 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1291CE2027F004AC962 /* Config.h */,
+				0C2FF12A1CE2027F004AC962 /* PrefixHeader.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0C2FF12B1CE2027F004AC962 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF12C1CE2027F004AC962 /* MFMHODecoModel.h */,
+				0C2FF12D1CE2027F004AC962 /* MFMHODecoModel.m */,
+				0C2FF12E1CE2027F004AC962 /* MFMHOEquipModel.h */,
+				0C2FF12F1CE2027F004AC962 /* MFMHOEquipModel.m */,
+				0C2FF1301CE2027F004AC962 /* MFMHOSkillModel.h */,
+				0C2FF1311CE2027F004AC962 /* MFMHOSkillModel.m */,
+				0C2FF1321CE2027F004AC962 /* MFMHOSkillRankModel.h */,
+				0C2FF1331CE2027F004AC962 /* MFMHOSkillRankModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0C2FF1341CE2027F004AC962 /* EquipSetLayout */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1351CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.h */,
+				0C2FF1361CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m */,
+				0C2FF1371CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.h */,
+				0C2FF1381CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m */,
+				0C2FF1391CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.h */,
+				0C2FF13A1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m */,
+				0C2FF13B1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.h */,
+				0C2FF13C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m */,
+				0C2FF13D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.h */,
+				0C2FF13E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m */,
+				0C2FF13F1CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.h */,
+				0C2FF1401CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m */,
+			);
+			path = EquipSetLayout;
+			sourceTree = "<group>";
+		};
+		0C2FF1411CE2027F004AC962 /* EquipSetSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1421CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.h */,
+				0C2FF1431CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m */,
+				0C2FF1441CE2027F004AC962 /* MFMHOEquipSetSearchQuery.h */,
+				0C2FF1451CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m */,
+				0C2FF1461CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.h */,
+				0C2FF1471CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m */,
+				0C2FF1481CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.h */,
+				0C2FF1491CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m */,
+				0C2FF14A1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.h */,
+				0C2FF14B1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m */,
+				0C2FF14C1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.h */,
+				0C2FF14D1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m */,
+			);
+			path = EquipSetSearch;
+			sourceTree = "<group>";
+		};
+		0C2FF1501CE2027F004AC962 /* SkillList */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1511CE2027F004AC962 /* MFMHOSkillSelectListViewController.h */,
+				0C2FF1521CE2027F004AC962 /* MFMHOSkillSelectListViewController.m */,
+			);
+			path = SkillList;
+			sourceTree = "<group>";
+		};
+		0C2FF1531CE2027F004AC962 /* SkillStone */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1541CE2027F004AC962 /* MFMHOSkillStoneListViewController.h */,
+				0C2FF1551CE2027F004AC962 /* MFMHOSkillStoneListViewController.m */,
+				0C2FF1561CE2027F004AC962 /* MFMHOSkillStoneMainViewController.h */,
+				0C2FF1571CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m */,
+				0C2FF1581CE2027F004AC962 /* MFMHOSkillStoneModel.h */,
+				0C2FF1591CE2027F004AC962 /* MFMHOSkillStoneModel.m */,
+				0C2FF15A1CE2027F004AC962 /* MFMHOSkillStonePickerView.h */,
+				0C2FF15B1CE2027F004AC962 /* MFMHOSkillStonePickerView.m */,
+			);
+			path = SkillStone;
+			sourceTree = "<group>";
+		};
+		0C2FF15D1CE2027F004AC962 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF15E1CE2027F004AC962 /* MFMHODatabase.h */,
+				0C2FF15F1CE2027F004AC962 /* MFMHODatabase.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C2FF1601CE2027F004AC962 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1611CE2027F004AC962 /* FMDB */,
+				0C2FF16D1CE2027F004AC962 /* MJExtension */,
+				0C2FF17D1CE2027F004AC962 /* SVProgressHUD */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		0C2FF1611CE2027F004AC962 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1621CE2027F004AC962 /* FMDatabase.h */,
+				0C2FF1631CE2027F004AC962 /* FMDatabase.m */,
+				0C2FF1641CE2027F004AC962 /* FMDatabaseAdditions.h */,
+				0C2FF1651CE2027F004AC962 /* FMDatabaseAdditions.m */,
+				0C2FF1661CE2027F004AC962 /* FMDatabasePool.h */,
+				0C2FF1671CE2027F004AC962 /* FMDatabasePool.m */,
+				0C2FF1681CE2027F004AC962 /* FMDatabaseQueue.h */,
+				0C2FF1691CE2027F004AC962 /* FMDatabaseQueue.m */,
+				0C2FF16A1CE2027F004AC962 /* FMDB.h */,
+				0C2FF16B1CE2027F004AC962 /* FMResultSet.h */,
+				0C2FF16C1CE2027F004AC962 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		0C2FF16D1CE2027F004AC962 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF16E1CE2027F004AC962 /* MJConst.h */,
+				0C2FF16F1CE2027F004AC962 /* MJConst.m */,
+				0C2FF1701CE2027F004AC962 /* MJExtension.h */,
+				0C2FF1711CE2027F004AC962 /* MJFoundation.h */,
+				0C2FF1721CE2027F004AC962 /* MJFoundation.m */,
+				0C2FF1731CE2027F004AC962 /* MJIvar.h */,
+				0C2FF1741CE2027F004AC962 /* MJIvar.m */,
+				0C2FF1751CE2027F004AC962 /* MJType.h */,
+				0C2FF1761CE2027F004AC962 /* MJType.m */,
+				0C2FF1771CE2027F004AC962 /* NSObject+MJCoding.h */,
+				0C2FF1781CE2027F004AC962 /* NSObject+MJCoding.m */,
+				0C2FF1791CE2027F004AC962 /* NSObject+MJIvar.h */,
+				0C2FF17A1CE2027F004AC962 /* NSObject+MJIvar.m */,
+				0C2FF17B1CE2027F004AC962 /* NSObject+MJKeyValue.h */,
+				0C2FF17C1CE2027F004AC962 /* NSObject+MJKeyValue.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		0C2FF17D1CE2027F004AC962 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF17E1CE2027F004AC962 /* SVProgressHUD.bundle */,
+				0C2FF17F1CE2027F004AC962 /* SVProgressHUD.h */,
+				0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		47EC17A91C61A30B0053F0BD = {
+			isa = PBXGroup;
+			children = (
+				47EC18111C6202A10053F0BD /* .tbd */,
+				0C2FF1201CE2027F004AC962 /* MFMHO */,
+				47EC17B31C61A30B0053F0BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47EC17B31C61A30B0053F0BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EC17B21C61A30B0053F0BD /* MFMHO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47EC18111C6202A10053F0BD /* .tbd */ = {
+			isa = PBXGroup;
+			children = (
+				47EC180F1C6202910053F0BD /* libsqlite3.0.tbd */,
+			);
+			name = .tbd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EC17B11C61A30B0053F0BD /* MFMHO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EC17C91C61A30B0053F0BD /* Build configuration list for PBXNativeTarget "MFMHO" */;
+			buildPhases = (
+				47EC17AE1C61A30B0053F0BD /* Sources */,
+				47EC17AF1C61A30B0053F0BD /* Frameworks */,
+				47EC17B01C61A30B0053F0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFMHO;
+			productName = MHO;
+			productReference = 47EC17B21C61A30B0053F0BD /* MFMHO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47EC17AA1C61A30B0053F0BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = feiquanqiu;
+				TargetAttributes = {
+					47EC17B11C61A30B0053F0BD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6RWMDU9J6G;
+					};
+				};
+			};
+			buildConfigurationList = 47EC17AD1C61A30B0053F0BD /* Build configuration list for PBXProject "MFMHO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47EC17A91C61A30B0053F0BD;
+			productRefGroup = 47EC17B31C61A30B0053F0BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47EC17B11C61A30B0053F0BD /* MFMHO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47EC17B01C61A30B0053F0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2FF1971CE2027F004AC962 /* Info.plist in Resources */,
+				0C2FF1AC1CE2027F004AC962 /* SVProgressHUD.bundle in Resources */,
+				0C2FF1861CE2027F004AC962 /* Main.storyboard in Resources */,
+				0C2FF1841CE2027F004AC962 /* Assets.xcassets in Resources */,
+				0C2FF1851CE2027F004AC962 /* LaunchScreen.storyboard in Resources */,
+				0C2FF19E1CE2027F004AC962 /* test.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47EC17AE1C61A30B0053F0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2FF1A91CE2027F004AC962 /* NSObject+MJCoding.m in Sources */,
+				0C2FF18B1CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m in Sources */,
+				0C2FF19C1CE2027F004AC962 /* MFMHOSkillStoneModel.m in Sources */,
+				0C2FF1AA1CE2027F004AC962 /* NSObject+MJIvar.m in Sources */,
+				0C2FF1AB1CE2027F004AC962 /* NSObject+MJKeyValue.m in Sources */,
+				0C2FF19D1CE2027F004AC962 /* MFMHOSkillStonePickerView.m in Sources */,
+				0C2FF1901CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m in Sources */,
+				0C2FF1A51CE2027F004AC962 /* MJConst.m in Sources */,
+				0C2FF1AE1CE2027F004AC962 /* ViewController.m in Sources */,
+				0C2FF1961CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m in Sources */,
+				0C2FF1871CE2027F004AC962 /* MFMHODecoModel.m in Sources */,
+				0C2FF1951CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m in Sources */,
+				0C2FF1991CE2027F004AC962 /* MFMHOSkillSelectListViewController.m in Sources */,
+				0C2FF1921CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m in Sources */,
+				0C2FF19B1CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m in Sources */,
+				0C2FF1931CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m in Sources */,
+				0C2FF1A71CE2027F004AC962 /* MJIvar.m in Sources */,
+				0C2FF18E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m in Sources */,
+				0C2FF18A1CE2027F004AC962 /* MFMHOSkillRankModel.m in Sources */,
+				0C2FF1A21CE2027F004AC962 /* FMDatabasePool.m in Sources */,
+				0C2FF1A81CE2027F004AC962 /* MJType.m in Sources */,
+				0C2FF1A61CE2027F004AC962 /* MJFoundation.m in Sources */,
+				0C2FF1A01CE2027F004AC962 /* FMDatabase.m in Sources */,
+				0C2FF1941CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m in Sources */,
+				0C2FF1881CE2027F004AC962 /* MFMHOEquipModel.m in Sources */,
+				0C2FF1A31CE2027F004AC962 /* FMDatabaseQueue.m in Sources */,
+				0C2FF1A41CE2027F004AC962 /* FMResultSet.m in Sources */,
+				0C2FF1AD1CE2027F004AC962 /* SVProgressHUD.m in Sources */,
+				0C2FF18F1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m in Sources */,
+				0C2FF1831CE2027F004AC962 /* MFMHOAppDelegate.m in Sources */,
+				0C2FF19F1CE2027F004AC962 /* MFMHODatabase.m in Sources */,
+				0C2FF18C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m in Sources */,
+				0C2FF18D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m in Sources */,
+				0C2FF1A11CE2027F004AC962 /* FMDatabaseAdditions.m in Sources */,
+				0C2FF19A1CE2027F004AC962 /* MFMHOSkillStoneListViewController.m in Sources */,
+				0C2FF1891CE2027F004AC962 /* MFMHOSkillModel.m in Sources */,
+				0C2FF1981CE2027F004AC962 /* main.m in Sources */,
+				0C2FF1911CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C2FF1241CE2027F004AC962 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C2FF1251CE2027F004AC962 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C2FF1261CE2027F004AC962 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C2FF1271CE2027F004AC962 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47EC17C71C61A30B0053F0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47EC17C81C61A30B0053F0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47EC17CA1C61A30B0053F0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MFMHO/Config/PrefixHeader.pch";
+				INFOPLIST_FILE = MFMHO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.feiquanqiu.MHO;
+				PRODUCT_NAME = MFMHO;
+			};
+			name = Debug;
+		};
+		47EC17CB1C61A30B0053F0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MFMHO/Config/PrefixHeader.pch";
+				INFOPLIST_FILE = MFMHO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.feiquanqiu.MHO;
+				PRODUCT_NAME = MFMHO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47EC17AD1C61A30B0053F0BD /* Build configuration list for PBXProject "MFMHO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC17C71C61A30B0053F0BD /* Debug */,
+				47EC17C81C61A30B0053F0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EC17C91C61A30B0053F0BD /* Build configuration list for PBXNativeTarget "MFMHO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC17CA1C61A30B0053F0BD /* Debug */,
+				47EC17CB1C61A30B0053F0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47EC17AA1C61A30B0053F0BD /* Project object */;
+}

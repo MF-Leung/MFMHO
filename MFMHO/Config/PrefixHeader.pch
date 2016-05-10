@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  OSPiOS
+//
+//  Created by apple on 15/7/11.
+//  Copyright (c) 2015年 MF. All rights reserved.
+//
+
+#ifndef OSPiOS_PrefixHeader_pch
+#define OSPiOS_PrefixHeader_pch
+#ifdef __OBJC__
+
+#import "Config.h"
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+#import "FMDB.h"
+#import "MFMHOSkillModel.h"
+#import "MFMHOSkillRankModel.h"
+#import "MFMHODecoModel.h"
+#import "MFMHOEquipModel.h"
+#import "MFMHODatabase.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif
+
+#endif
