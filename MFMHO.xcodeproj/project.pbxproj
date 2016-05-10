@@ -208,18 +208,9 @@
 		0C2FF1341CE2027F004AC962 /* EquipSetLayout */ = {
 			isa = PBXGroup;
 			children = (
-				0C2FF1351CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.h */,
-				0C2FF1361CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m */,
-				0C2FF1371CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.h */,
-				0C2FF1381CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m */,
-				0C2FF1391CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.h */,
-				0C2FF13A1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m */,
-				0C2FF13B1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.h */,
-				0C2FF13C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m */,
-				0C2FF13D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.h */,
-				0C2FF13E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m */,
-				0C2FF13F1CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.h */,
-				0C2FF1401CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m */,
+				0CC3F2EC1CE21F9200678851 /* Controller */,
+				0CC3F2EB1CE21F8000678851 /* Model */,
+				0CC3F2EA1CE21F6E00678851 /* View */,
 			);
 			path = EquipSetLayout;
 			sourceTree = "<group>";
@@ -227,18 +218,9 @@
 		0C2FF1411CE2027F004AC962 /* EquipSetSearch */ = {
 			isa = PBXGroup;
 			children = (
-				0C2FF1421CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.h */,
-				0C2FF1431CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m */,
-				0C2FF1441CE2027F004AC962 /* MFMHOEquipSetSearchQuery.h */,
-				0C2FF1451CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m */,
-				0C2FF1461CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.h */,
-				0C2FF1471CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m */,
-				0C2FF1481CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.h */,
-				0C2FF1491CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m */,
-				0C2FF14A1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.h */,
-				0C2FF14B1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m */,
-				0C2FF14C1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.h */,
-				0C2FF14D1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m */,
+				0CC3F2EF1CE21FC800678851 /* Controller */,
+				0CC3F2EE1CE21FBC00678851 /* Model */,
+				0CC3F2ED1CE21FA700678851 /* View */,
 			);
 			path = EquipSetSearch;
 			sourceTree = "<group>";
@@ -255,14 +237,9 @@
 		0C2FF1531CE2027F004AC962 /* SkillStone */ = {
 			isa = PBXGroup;
 			children = (
-				0C2FF1541CE2027F004AC962 /* MFMHOSkillStoneListViewController.h */,
-				0C2FF1551CE2027F004AC962 /* MFMHOSkillStoneListViewController.m */,
-				0C2FF1561CE2027F004AC962 /* MFMHOSkillStoneMainViewController.h */,
-				0C2FF1571CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m */,
-				0C2FF1581CE2027F004AC962 /* MFMHOSkillStoneModel.h */,
-				0C2FF1591CE2027F004AC962 /* MFMHOSkillStoneModel.m */,
-				0C2FF15A1CE2027F004AC962 /* MFMHOSkillStonePickerView.h */,
-				0C2FF15B1CE2027F004AC962 /* MFMHOSkillStonePickerView.m */,
+				0CC3F2F21CE21FF100678851 /* Controller */,
+				0CC3F2F11CE21FE700678851 /* Model */,
+				0CC3F2F01CE21FDF00678851 /* View */,
 			);
 			path = SkillStone;
 			sourceTree = "<group>";
@@ -334,6 +311,101 @@
 				0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		0CC3F2EA1CE21F6E00678851 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1351CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.h */,
+				0C2FF1361CE2027F004AC962 /* MFMHOEquipSetLayoutBasicTableViewCell.m */,
+				0C2FF1391CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.h */,
+				0C2FF13A1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailTableViewCell.m */,
+				0C2FF13B1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.h */,
+				0C2FF13C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m */,
+				0C2FF13D1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.h */,
+				0C2FF13E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0CC3F2EB1CE21F8000678851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1371CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.h */,
+				0C2FF1381CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CC3F2EC1CE21F9200678851 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF13F1CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.h */,
+				0C2FF1401CE2027F004AC962 /* MFMHOEquipSetLayoutViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0CC3F2ED1CE21FA700678851 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1481CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.h */,
+				0C2FF1491CE2027F004AC962 /* MFMHOEquipSetSearchResultTableViewCell.m */,
+				0C2FF14C1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.h */,
+				0C2FF14D1CE2027F004AC962 /* MFMHOEquipSetSearchSelectedSkillStoneTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0CC3F2EE1CE21FBC00678851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1441CE2027F004AC962 /* MFMHOEquipSetSearchQuery.h */,
+				0C2FF1451CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m */,
+				0C2FF1461CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.h */,
+				0C2FF1471CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CC3F2EF1CE21FC800678851 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1421CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.h */,
+				0C2FF1431CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m */,
+				0C2FF14A1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.h */,
+				0C2FF14B1CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0CC3F2F01CE21FDF00678851 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF15A1CE2027F004AC962 /* MFMHOSkillStonePickerView.h */,
+				0C2FF15B1CE2027F004AC962 /* MFMHOSkillStonePickerView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0CC3F2F11CE21FE700678851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1581CE2027F004AC962 /* MFMHOSkillStoneModel.h */,
+				0C2FF1591CE2027F004AC962 /* MFMHOSkillStoneModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CC3F2F21CE21FF100678851 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C2FF1541CE2027F004AC962 /* MFMHOSkillStoneListViewController.h */,
+				0C2FF1551CE2027F004AC962 /* MFMHOSkillStoneListViewController.m */,
+				0C2FF1561CE2027F004AC962 /* MFMHOSkillStoneMainViewController.h */,
+				0C2FF1571CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		47EC17A91C61A30B0053F0BD = {

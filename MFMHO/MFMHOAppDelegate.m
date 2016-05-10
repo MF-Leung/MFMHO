@@ -18,42 +18,13 @@
     [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.7]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     
-    NSMutableArray * arr =[NSMutableArray array];
+   
     
-    [arr addObject:@{@"a":@5}];
-    [arr addObject:@{@"a":@2}];
-    [arr addObject:@{@"a":@3}];
-    [arr addObject:@{@"a":@3}];
-    [arr addObject:@{@"a":@1}];
-
-    [self quickSortWithArray:arr left:0 right:4 key:@"a"];
-    
-       
         // Override point for customization after application launch.
     return YES;
 }
--(void)quickSortWithArray:(NSMutableArray *)aData left:(NSInteger)left right:(NSInteger)right key:(NSString*)key{
-    if (right > left) {
-        NSInteger i = left;
-        NSInteger j = right + 1;
-        while (true) {
-            while (i+1 < [aData count] && [[aData objectAtIndex:++i][key] integerValue] < [[aData objectAtIndex:left][key]integerValue]) ;
-            while (j-1 > -1 && [[aData objectAtIndex:--j][key]integerValue] > [[aData objectAtIndex:left][key]integerValue]) ;
-            if (i >= j) {
-                break;
-            }
-            [self swapWithData:aData index1:i index2:j];
-        }
-        [self swapWithData:aData index1:left index2:j];
-        [self quickSortWithArray:aData left:left right:j-1 key:key];
-        [self quickSortWithArray:aData left:j+1 right:right key:key];
-    }
-}
--(void)swapWithData:(NSMutableArray *)aData index1:(NSInteger)index1 index2:(NSInteger)index2{
-    id tmp = [aData objectAtIndex:index1];
-    [aData replaceObjectAtIndex:index1 withObject:[aData objectAtIndex:index2]];
-    [aData replaceObjectAtIndex:index2 withObject:tmp];
-}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

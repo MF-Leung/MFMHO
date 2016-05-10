@@ -31,7 +31,7 @@
     self.lbWst.text =result.wst.Name;
 
     __block  NSInteger useSlotNum = 0;
-    NSArray *equipModelNameKeys =@[@"arm",@"body",@"head",@"leg",@"wst"];
+    NSArray *equipModelNameKeys =NSARRAY_EQUIP_MODEL_NAME_KEYS;
     
     for (int i =0; i<equipModelNameKeys.count; i++) {
         

@@ -43,7 +43,7 @@
     
     NSMutableArray *skillDetails =[NSMutableArray array];
     
-    NSArray *equipModelNameKeys =@[@"arm",@"body",@"head",@"leg",@"wst"];
+    NSArray *equipModelNameKeys =NSARRAY_EQUIP_MODEL_NAME_KEYS;
 
     for (int equip_i =0; equip_i<equipModelNameKeys.count; equip_i++) {
         NSString *key= equipModelNameKeys[equip_i];

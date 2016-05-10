@@ -60,20 +60,6 @@
     
     [self.tableView reloadData];
     
-//    self.searchProgress.progress =0;
-//    
-//    self.searchProgress.hidden =NO;
-////
-//    [self.query searchWithHandle:^(EquipSetSearchResultModel *model) {
-//        [self.datas addObject:model];
-//        [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.datas.count-1 inSection:0]] withRowAnimation:(UITableViewRowAnimationNone)];
-//    } nextBlock:^(NSInteger resultIndex, NSInteger resultCount) {
-//        [self.searchProgress setProgress:(float)resultIndex/(float)resultCount animated:YES];
-//        if (resultIndex==resultCount) {
-//            
-//            [self performSelector:@selector(searchEnd) withObject:nil afterDelay:1];
-//        }
-//    }];
 }
 
 - (void)searchEnd{
@@ -100,8 +86,8 @@
     
     FMDatabase *db =[MFMHODatabase instance].db;
     
-    NSArray *equipModelNameKeys =@[@"arm",@"body",@"head",@"leg",@"wst"];
-    NSArray *equipTableNameKeys =@[@"Equip_Arm",@"Equip_Body",@"Equip_Head",@"Equip_Leg",@"Equip_Wst"];
+    NSArray *equipModelNameKeys =NSARRAY_EQUIP_MODEL_NAME_KEYS;
+    NSArray *equipTableNameKeys =NSARRAY_EQUIP_TABLE_NAME_KEYS;
     
   MFMHOEquipSetSearchResultModel *result =self.datas[indexPath.row];
     

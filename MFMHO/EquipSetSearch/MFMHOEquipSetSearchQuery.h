@@ -27,8 +27,6 @@ typedef NS_ENUM(NSInteger,EquipSetSearchQueryOccupatant){
 
 @property (nonatomic)EquipSetSearchQueryOccupatant occupatant;
 
-- (void)searchWithHandle:(void(^)(MFMHOEquipSetSearchResultModel* model))handle nextBlock:(void(^)(NSInteger resultIndex,NSInteger resultCount))nextBlock;
-
 @property (strong, nonatomic,readonly) NSMutableArray *resultSet;
 
 - (NSArray *)searchNextPage;

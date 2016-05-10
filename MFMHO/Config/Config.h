@@ -7,6 +7,6 @@
 #define NUMBER_TO_STR(num) [@(num) stringValue]
 #define kWinSize [UIScreen mainScreen].bounds.size
 
+#define NSARRAY_EQUIP_MODEL_NAME_KEYS [NSArray arrayWithObjects: @"arm",@"body",@"head",@"leg",@"wst", nil];
 
-
-
+#define NSARRAY_EQUIP_TABLE_NAME_KEYS [NSArray arrayWithObjects: @"Equip_Arm",@"Equip_Body",@"Equip_Head",@"Equip_Leg",@"Equip_Wst", nil]
