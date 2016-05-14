@@ -31,25 +31,33 @@
 }
 
 - (NSArray *)searchNextPage{
+    
     self.isStop =NO;
+    
     FMDatabase *db =[MFMHODatabase instance].db;
+    
     NSMutableArray<NSMutableArray*> * decos =[NSMutableArray array];
     
     for (int i =0; i<self.skills.count; i++) {
+        
         NSMutableArray<MFMHODecoModel *> * ar =[NSMutableArray array];
+        
         [db executeStatements:[NSString stringWithFormat:@"select * from Deco where SkillRankID1 = %@ order by SkillRankPoint1 desc",self.skills[i].SkillRankID] withResultBlock:^int(NSDictionary *resultsDictionary) {
             
             [ar addObject:[MFMHODecoModel objectWithKeyValues:resultsDictionary]];
             
             return 0;
         }];
-        [decos addObject:[@[ar]mutableCopy]];
+        
+        [decos addObject:ar];
         
     }
     NSMutableArray * result =[NSMutableArray array];
     
     NSArray *equipModelNameKeys =NSARRAY_EQUIP_MODEL_NAME_KEYS;
+    
     if (!self.set){
+        
         NSArray *equip_Name = NSARRAY_EQUIP_TABLE_NAME_KEYS;
         
         NSString * condition = @"";
@@ -61,13 +69,17 @@
             NSString * condition2 = @"";
             
             for (int i2 =0;i2<self.skills.count;i2++) {
+                
                 NSString *skillID = [self.skills[i2].SkillRankID stringValue];
+                
                 NSString * or =@"";
+                
                 if (i2>0) {
                     or =@" or ";
                 }
                 // OR %@.SlotNum = 3
-                condition2 =[NSString stringWithFormat:@"%@%@((%@.SkillRankID1 = %@ and %@.SkillRankPoint1>0 ) OR (%@.SkillRankID2 = %@ and %@.SkillRankPoint2>0 ) OR (%@.SkillRankID3 =%@ and %@.SkillRankPoint3>0 ) OR (%@.SkillRankID4 =%@ and %@.SkillRankPoint4>0 )  OR (%@.SkillRankID5 =%@ and %@.SkillRankPoint5>0 ) OR %@.ID = %ld)",condition2,or,equipName,skillID,equipName,equipName,skillID,equipName,equipName,skillID,equipName,equipName,skillID,equipName,equipName,skillID,equipName,equipName,(long)[self idOfEquipSlotNumThreeWithEquipType:equipName withOccupatant:self.occupatant]];
+                condition2 =[NSString stringWithFormat:@"%@%@((__equipName__.SkillRankID1 = %@ and __equipName__.SkillRankPoint1>0 ) OR (__equipName__.SkillRankID2 = %@ and __equipName__.SkillRankPoint2>0 ) OR (__equipName__.SkillRankID3 =%@ and __equipName__.SkillRankPoint3>0 ) OR (__equipName__.SkillRankID4 =%@ and __equipName__.SkillRankPoint4>0 )  OR (__equipName__.SkillRankID5 =%@ and __equipName__.SkillRankPoint5>0 ) OR __equipName__.ID = %ld)",condition2,or,skillID,skillID,skillID,skillID,skillID,(long)[self idOfEquipSlotNumThreeWithEquipType:equipName withOccupatant:self.occupatant]];
+                condition2 =[condition2 stringByReplacingOccurrencesOfString:@"__equipName__" withString:equipName];
             }
             NSString * and =@"";
             if (i>0) {
@@ -85,13 +97,21 @@
         NSString *columns =@"";
         
         for (int i =0; i<equip_Name.count; i++) {
+            
             if (i>0) {
+                
                 columns =[NSString stringWithFormat:@"%@,",columns];
+                
             }
-            columns =[NSString stringWithFormat:@"%@ %@.ID,%@.Name,%@.SlotNum,%@.SkillRankID1,%@.SkillRankPoint1,%@.SkillRankID2,%@.SkillRankPoint2,%@.SkillRankID3,%@.SkillRankPoint3,%@.SkillRankID4,%@.SkillRankPoint4,%@.SkillRankID5,%@.SkillRankPoint5",columns,equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i],equip_Name[i]];
+            
+            columns =[NSString stringWithFormat:@"%@ __equipName__.ID,__equipName__.Name,__equipName__.SlotNum,__equipName__.SkillRankID1,__equipName__.SkillRankPoint1,__equipName__.SkillRankID2,__equipName__.SkillRankPoint2,__equipName__.SkillRankID3,__equipName__.SkillRankPoint3,__equipName__.SkillRankID4,__equipName__.SkillRankPoint4,__equipName__.SkillRankID5,__equipName__.SkillRankPoint5",columns];
+            
+            columns =[columns stringByReplacingOccurrencesOfString:@"__equipName__" withString:equip_Name[i]];
+
             
         }
         NSString * sql =[NSString stringWithFormat:@"SELECT %@ from Equip_Arm,Equip_Body,Equip_Head,Equip_Leg,Equip_Wst where %@",columns,condition];
+        
         self.set = [db executeQuery:sql];
         
     }
@@ -111,7 +131,6 @@
             
             NSArray* dictionary = resul[i];
             
-            
             [arr addObject:dictionary];
             
 //            [slotVacant addObject:@{@"key":equipModelNameKeys[i],@"value":dictionary[2]}];
@@ -129,27 +148,14 @@
                 if (u<i) {
     
                 [slotVacant insertObject:arr atIndex:u];
+                    
                 }else
                     [slotVacant addObject:arr];
 
             }
             
-           // [s[[dictionary[2] intValue]]addObject:arr];
         }
-//        NSSortDescriptor *sortDescriptorSlotVacant = [[NSSortDescriptor alloc] initWithKey:@"value" ascending:NO];
-//        
-//        NSArray *sortDescriptorSlotVacants = [[NSArray alloc] initWithObjects:&sortDescriptorSlotVacant count:1];
-//        
-//        [slotVacant sortUsingDescriptors:sortDescriptorSlotVacants];
-        
-//                NSMutableArray * ass =[NSMutableArray array];
-//                for (int i = 3; i>=0 ; i--) {
-//                    for (int j=1; j<=[s[i]count]; j++) {
-//        
-//                        [ass addObject:s[i][j-1]];
-//                    }
-//                }
-//                slotVacant  =ass;
+
         NSMutableArray * differenceskillRange = [NSMutableArray array];
         
         for (int o =0; o <self.skills.count; o++) {
@@ -223,37 +229,53 @@
         }
         
         
-//        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"SkillPoint" ascending:NO];
-//        NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:&sortDescriptor count:1];
-//        [differenceskillRange sortUsingDescriptors:sortDescriptors];
         NSArray * useDeco= [self run:slotVacant  skillPoint:differenceskillRange deco:decos useDeco:[NSMutableArray new]];
+        
         if (useDeco.count>0) {
+            
             MFMHOEquipSetSearchResultModel * model = [[MFMHOEquipSetSearchResultModel alloc] init];
+            
             for (int i =0; i<resul.count; i++) {
+                
                 NSArray* dictionary = resul[i];
+                
                 MFMHOEquipModel * m =[[MFMHOEquipModel alloc] init];
+                
                 m.ID =dictionary[0];
+                
                 m.Name =dictionary[1];
+                
                 m.SlotNum =dictionary[2];
-//                NSArray * equiUseDeco =[useDeco filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"key = %@",equipModelNameKeys[i]]];
+                
+
                 NSMutableArray * equiUseDeco =[NSMutableArray array];
+                
                 for (NSArray *arr in useDeco) {
+                    
                     if ([equipModelNameKeys[i] isEqualToString:arr[0]]) {
+                        
                         [equiUseDeco addObject:arr];
+                        
                     }
                 }
+                
                 [model setValue:equiUseDeco forKey:equipModelNameKeys[i]];
+                
                 NSMutableArray * useDecos =[NSMutableArray array];
                 
                 for (NSArray *obj in equiUseDeco) {
+                    
                     [useDecos addObject:obj[1]];
+                    
                 }
                 m.useDecos =useDecos;
                 
                 [model setValue:m forKey:equipModelNameKeys[i]];
             }
             [result addObject:model];
+            
             if (result.count >= EQUIPSETSEARCHPAGE_COUNT) {
+                
                 return result;
             }
         }
@@ -275,8 +297,8 @@
     }
     NSArray * ar;
     for (NSArray *b in allDeco) {
-        if ([[b.firstObject[0] SkillRankID1] isEqualToNumber:differenceskillRange.firstObject[0]]) {
-            ar =b.firstObject;
+        if ([[b[0] SkillRankID1] isEqualToNumber:differenceskillRange.firstObject[0]]) {
+            ar =b;
             break;
         }
     }
@@ -316,41 +338,51 @@
                 if (skillRankID2_dic) {
                     //point 是珠宝的第二技能点
                     NSInteger point2 =[[skillRankID2_dic objectAtIndex:1] integerValue]-[deco.SkillRankPoint2 integerValue];
-//                    [skillRankID2_dic setObject:@(point2) forKey:@"SkillPoint"];
+
                     skillRankID2_dic[1] =@(point2);
 
-//                    [differenceskillRange.firstObject setObject:@(point) forKey:@"SkillPoint"];
                     differenceskillRange.firstObject[1] =@(point);
 
                     [self swapWithData:differenceskillRange withKey:1 index1:0 index2:[differenceskillRange indexOfObject:skillRankID2_dic]];
                     
                 }else{
-//                    [differenceskillRange.firstObject setObject:@(point) forKey:@"SkillPoint"];
+
                     differenceskillRange.firstObject[1] =@(point);
+                    
                     [self swapWithData:differenceskillRange withKey:1];
                     
                 }
-                
                 
                 return [self run:slotVacant skillPoint:differenceskillRange deco:allDeco useDeco:useDeco];
                 
             }else{
                 NSInteger slotNum =-1;
+                
                 NSInteger removeIndex = 0;
                 
                 for (NSInteger i =slotVacant.count-1;i>=0;i--) {
+                    
                     NSNumber * stol= slotVacant[i][1];
+                    
                     NSInteger slotNum2 = [stol integerValue] - [deco.SlotNum integerValue];
+                    
                     if (slotNum2 >=0) {
+                        
                         slotNum = slotNum2;
+                        
                         removeIndex = i;
+                        
                         break;
                     }
                 }
                 if (slotNum>=0) {
+                    
                     NSString * key =slotVacant[removeIndex][0];
+                    
                     [slotVacant removeObjectAtIndex:removeIndex];
+                    
                     if (slotNum>0) {
+                        
                         [slotVacant addObject:@[key,[NSNumber numberWithLong:slotNum]]];
                         
                         [self swapWithData:slotVacant];
@@ -360,15 +392,17 @@
                     if (skillRankID2_dic) {
                         //point 是珠宝的第二技能点
                         NSInteger point2 =[[skillRankID2_dic objectAtIndex:1] integerValue]-[deco.SkillRankPoint2 integerValue];
-//                        [skillRankID2_dic setObject:@(point2) forKey:@"SkillPoint"];
+
                         skillRankID2_dic[1] =@(point2);
-//                        [differenceskillRange.firstObject setObject:@(point) forKey:@"SkillPoint"];
+
                         differenceskillRange.firstObject[1] =@(point);
+                        
                         [self swapWithData:differenceskillRange withKey:1 index1:0 index2:[differenceskillRange indexOfObject:skillRankID2_dic]];
                         
                     }else{
-//                        [differenceskillRange.firstObject setObject:@(point) forKey:@"SkillPoint"];
+
                         differenceskillRange.firstObject[1] =@(point);
+                        
                         [self swapWithData:differenceskillRange withKey:1];
                         
                     }
