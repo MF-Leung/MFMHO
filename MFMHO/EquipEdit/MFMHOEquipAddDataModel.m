@@ -6,20 +6,20 @@
 //  Copyright © 2016年 feiquanqiu. All rights reserved.
 //
 
-#import "EquipAddDataModel.h"
+#import "MFMHOEquipAddDataModel.h"
 
-@implementation EquipAddDataModel
+@implementation MFMHOEquipAddDataModel
 
 + (instancetype)equipAddDataModelwithTitle:(NSString *)title withPlaceholder:(NSString *)placeholder withType:(id)type withKeyboardType:(UIKeyboardType)keyboardType{
     
-    return [EquipAddDataModel equipAddDataModelwithTitle:title withPlaceholder:placeholder withType:type withIsTable:NO withKeyboardType:keyboardType];
+    return [MFMHOEquipAddDataModel equipAddDataModelwithTitle:title withPlaceholder:placeholder withType:type withIsTable:NO withKeyboardType:keyboardType];
     
    
 }
 
 
 + (instancetype)equipAddDataModelwithTitle:(NSString *)title withPlaceholder:(NSString *)placeholder withType:(id)type withIsTable:(BOOL)isTable withKeyboardType:(UIKeyboardType)keyboardType{
-    EquipAddDataModel *obj =[[EquipAddDataModel alloc] init];
+    MFMHOEquipAddDataModel *obj =[[MFMHOEquipAddDataModel alloc] init];
     
     obj.title =title;
     
@@ -34,7 +34,7 @@
     return obj;
 }
 
-+ (BOOL)addModelsToDatabase:(NSArray <NSArray <EquipAddDataModel*>*>*)datas{
++ (BOOL)addModelsToDatabase:(NSArray <NSArray <MFMHOEquipAddDataModel*>*>*)datas{
 
     
     
@@ -51,9 +51,9 @@
     
     __block BOOL b;
     
-    [datas enumerateObjectsUsingBlock:^(NSArray<EquipAddDataModel *> * _Nonnull obj1, NSUInteger idx1, BOOL * _Nonnull stop1) {
+    [datas enumerateObjectsUsingBlock:^(NSArray<MFMHOEquipAddDataModel *> * _Nonnull obj1, NSUInteger idx1, BOOL * _Nonnull stop1) {
         
-        [obj1 enumerateObjectsUsingBlock:^(EquipAddDataModel * _Nonnull obj2, NSUInteger idx2, BOOL * _Nonnull stop2) {
+        [obj1 enumerateObjectsUsingBlock:^(MFMHOEquipAddDataModel * _Nonnull obj2, NSUInteger idx2, BOOL * _Nonnull stop2) {
             
             if (obj2.text.length ==0) {
                 

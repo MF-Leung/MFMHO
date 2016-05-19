@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EquipAddDataViewController : UIViewController
+@interface MFMHOEquipAddDataViewController : UIViewController
 
 @end

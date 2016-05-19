@@ -6,20 +6,20 @@
 //  Copyright © 2016年 feiquanqiu. All rights reserved.
 //
 
-#import "EquipAddDataTableViewCell.h"
+#import "MFMHOEquipAddDataTableViewCell.h"
 
-@interface EquipAddDataTableViewCell ()<UITextFieldDelegate>
+@interface MFMHOEquipAddDataTableViewCell ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
 
 @property (nonatomic)BOOL s;
 @end
 
-@implementation EquipAddDataTableViewCell
+@implementation MFMHOEquipAddDataTableViewCell
 - (void)awakeFromNib {
     // Initialization code
 
 }
-- (void)setup:(EquipAddDataModel *)obj{
+- (void)setup:(MFMHOEquipAddDataModel *)obj{
     self.lbTitle.text =obj.title;
     
     self.tfContent.text =obj.text;

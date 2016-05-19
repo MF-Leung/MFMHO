@@ -6,23 +6,23 @@
 //  Copyright © 2016年 feiquanqiu. All rights reserved.
 //
 
-#import "EquipAddDataViewController.h"
-#import "EquipAddDataTableViewCell.h"
-#import "EquipAddDataModel.h"
+#import "MFMHOEquipAddDataViewController.h"
+#import "MFMHOEquipAddDataTableViewCell.h"
+#import "MFMHOEquipAddDataModel.h"
 #import "MFMHOSkillStonePickerView.h"
 
 
 
-@interface EquipAddDataViewController ()<UITextFieldDelegate,UITableViewDelegate,UIPickerViewDataSource
+@interface MFMHOEquipAddDataViewController ()<UITextFieldDelegate,UITableViewDelegate,UIPickerViewDataSource
 ,UIPickerViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) MFMHOSkillStonePickerView *pickerView;
 
 @property (strong,nonatomic)NSArray *equipTypes;
 
-@property (strong, nonatomic) IBOutletCollection(EquipAddDataTableViewCell) NSArray *cells;
+@property (strong, nonatomic) IBOutletCollection(MFMHOEquipAddDataTableViewCell) NSArray *cells;
 
-@property (strong ,nonatomic)NSArray <NSArray<EquipAddDataModel*> * > *datas;
+@property (strong ,nonatomic)NSArray <NSArray<MFMHOEquipAddDataModel*> * > *datas;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -148,7 +148,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    EquipAddDataTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    MFMHOEquipAddDataTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     [cell setup:self.datas[indexPath.section][indexPath.row]];
     
@@ -179,9 +179,9 @@
                 
                 NSInteger  selectedRow =[pickerView.pickerView selectedRowInComponent:0];
 
-                EquipAddDataTableViewCell *cell =[tableView cellForRowAtIndexPath:indexPath];
+                MFMHOEquipAddDataTableViewCell *cell =[tableView cellForRowAtIndexPath:indexPath];
                 
-                EquipAddDataModel *obj =self.datas[indexPath.section][indexPath.row];
+                MFMHOEquipAddDataModel *obj =self.datas[indexPath.section][indexPath.row];
                 
                 cell.tfContent.text =[obj type][selectedRow][Title];
                 

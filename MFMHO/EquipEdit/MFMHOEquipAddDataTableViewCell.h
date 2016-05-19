@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EquipAddDataModel.h"
-@interface EquipAddDataTableViewCell : UITableViewCell
-- (void)setup:(EquipAddDataModel *)obj;
+#import "MFMHOEquipAddDataModel.h"
+@interface MFMHOEquipAddDataTableViewCell : UITableViewCell
+- (void)setup:(MFMHOEquipAddDataModel *)obj;
 @property (weak, nonatomic) IBOutlet UITextField *tfContent;
 
 @end

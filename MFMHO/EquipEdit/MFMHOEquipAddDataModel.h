@@ -10,7 +10,7 @@
 
 #define Title @"title"
 #define Value @"table"
-@interface EquipAddDataModel : NSObject
+@interface MFMHOEquipAddDataModel : NSObject
 
 @property (copy, nonatomic)NSString *title;
 

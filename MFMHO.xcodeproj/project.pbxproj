@@ -50,9 +50,10 @@
 		0C2FF1AB1CE2027F004AC962 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF17C1CE2027F004AC962 /* NSObject+MJKeyValue.m */; };
 		0C2FF1AC1CE2027F004AC962 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FF17E1CE2027F004AC962 /* SVProgressHUD.bundle */; };
 		0C2FF1AD1CE2027F004AC962 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */; };
-		0C36756C1CE7005E00FC0690 /* EquipAddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C36756B1CE7005E00FC0690 /* EquipAddDataViewController.m */; };
-		0C49CCFC1CE813AA009030D5 /* EquipAddDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C49CCFB1CE813AA009030D5 /* EquipAddDataModel.m */; };
-		0C49CCFF1CE815D5009030D5 /* EquipAddDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C49CCFE1CE815D5009030D5 /* EquipAddDataTableViewCell.m */; };
+		0C36756C1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C36756B1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.m */; };
+		0C3935101CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C39350F1CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.m */; };
+		0C49CCFC1CE813AA009030D5 /* MFMHOEquipAddDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C49CCFB1CE813AA009030D5 /* MFMHOEquipAddDataModel.m */; };
+		0C49CCFF1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C49CCFE1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.m */; };
 		47EC18101C6202910053F0BD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EC180F1C6202910053F0BD /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
@@ -140,12 +141,14 @@
 		0C2FF17E1CE2027F004AC962 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		0C2FF17F1CE2027F004AC962 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		0C2FF1801CE2027F004AC962 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		0C36756A1CE7005E00FC0690 /* EquipAddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipAddDataViewController.h; sourceTree = "<group>"; };
-		0C36756B1CE7005E00FC0690 /* EquipAddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipAddDataViewController.m; sourceTree = "<group>"; };
-		0C49CCFA1CE813AA009030D5 /* EquipAddDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipAddDataModel.h; sourceTree = "<group>"; };
-		0C49CCFB1CE813AA009030D5 /* EquipAddDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipAddDataModel.m; sourceTree = "<group>"; };
-		0C49CCFD1CE815D5009030D5 /* EquipAddDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipAddDataTableViewCell.h; sourceTree = "<group>"; };
-		0C49CCFE1CE815D5009030D5 /* EquipAddDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipAddDataTableViewCell.m; sourceTree = "<group>"; };
+		0C36756A1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipAddDataViewController.h; sourceTree = "<group>"; };
+		0C36756B1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipAddDataViewController.m; sourceTree = "<group>"; };
+		0C39350E1CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOSkillRankListViewController.h; sourceTree = "<group>"; };
+		0C39350F1CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOSkillRankListViewController.m; sourceTree = "<group>"; };
+		0C49CCFA1CE813AA009030D5 /* MFMHOEquipAddDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipAddDataModel.h; sourceTree = "<group>"; };
+		0C49CCFB1CE813AA009030D5 /* MFMHOEquipAddDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipAddDataModel.m; sourceTree = "<group>"; };
+		0C49CCFD1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMHOEquipAddDataTableViewCell.h; sourceTree = "<group>"; };
+		0C49CCFE1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMHOEquipAddDataTableViewCell.m; sourceTree = "<group>"; };
 		47EC17B21C61A30B0053F0BD /* MFMHO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFMHO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EC180F1C6202910053F0BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -331,8 +334,8 @@
 		0C49CCF71CE81370009030D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C49CCFA1CE813AA009030D5 /* EquipAddDataModel.h */,
-				0C49CCFB1CE813AA009030D5 /* EquipAddDataModel.m */,
+				0C49CCFA1CE813AA009030D5 /* MFMHOEquipAddDataModel.h */,
+				0C49CCFB1CE813AA009030D5 /* MFMHOEquipAddDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -340,8 +343,10 @@
 		0C49CCF81CE81391009030D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0C36756A1CE7005E00FC0690 /* EquipAddDataViewController.h */,
-				0C36756B1CE7005E00FC0690 /* EquipAddDataViewController.m */,
+				0C36756A1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.h */,
+				0C36756B1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.m */,
+				0C39350E1CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.h */,
+				0C39350F1CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -349,8 +354,8 @@
 		0C49CCF91CE81398009030D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0C49CCFD1CE815D5009030D5 /* EquipAddDataTableViewCell.h */,
-				0C49CCFE1CE815D5009030D5 /* EquipAddDataTableViewCell.m */,
+				0C49CCFD1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.h */,
+				0C49CCFE1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -563,12 +568,13 @@
 				0C2FF1951CE2027F004AC962 /* MFMHOEquipSetSearchResultViewController.m in Sources */,
 				0C2FF1991CE2027F004AC962 /* MFMHOSkillSelectListViewController.m in Sources */,
 				0C2FF1921CE2027F004AC962 /* MFMHOEquipSetSearchQuery.m in Sources */,
-				0C36756C1CE7005E00FC0690 /* EquipAddDataViewController.m in Sources */,
+				0C36756C1CE7005E00FC0690 /* MFMHOEquipAddDataViewController.m in Sources */,
 				0C2FF19B1CE2027F004AC962 /* MFMHOSkillStoneMainViewController.m in Sources */,
 				0C2FF1931CE2027F004AC962 /* MFMHOEquipSetSearchResultModel.m in Sources */,
 				0C2FF1A71CE2027F004AC962 /* MJIvar.m in Sources */,
 				0C2FF18E1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillLaunchedTableViewCell.m in Sources */,
 				0C2FF18A1CE2027F004AC962 /* MFMHOSkillRankModel.m in Sources */,
+				0C3935101CEDFC4F007C83C3 /* MFMHOSkillRankListViewController.m in Sources */,
 				0C2FF1A21CE2027F004AC962 /* FMDatabasePool.m in Sources */,
 				0C2FF1A81CE2027F004AC962 /* MJType.m in Sources */,
 				0C2FF1A61CE2027F004AC962 /* MJFoundation.m in Sources */,
@@ -579,7 +585,7 @@
 				0C2FF1A41CE2027F004AC962 /* FMResultSet.m in Sources */,
 				0C2FF1AD1CE2027F004AC962 /* SVProgressHUD.m in Sources */,
 				0C2FF18F1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillTableViewCell.m in Sources */,
-				0C49CCFC1CE813AA009030D5 /* EquipAddDataModel.m in Sources */,
+				0C49CCFC1CE813AA009030D5 /* MFMHOEquipAddDataModel.m in Sources */,
 				0C2FF1831CE2027F004AC962 /* MFMHOAppDelegate.m in Sources */,
 				0C2FF19F1CE2027F004AC962 /* MFMHODatabase.m in Sources */,
 				0C2FF18C1CE2027F004AC962 /* MFMHOEquipSetLayoutSkillDetailModel.m in Sources */,
@@ -588,7 +594,7 @@
 				0C2FF19A1CE2027F004AC962 /* MFMHOSkillStoneListViewController.m in Sources */,
 				0C2FF1891CE2027F004AC962 /* MFMHOSkillModel.m in Sources */,
 				0C2FF1981CE2027F004AC962 /* main.m in Sources */,
-				0C49CCFF1CE815D5009030D5 /* EquipAddDataTableViewCell.m in Sources */,
+				0C49CCFF1CE815D5009030D5 /* MFMHOEquipAddDataTableViewCell.m in Sources */,
 				0C2FF1911CE2027F004AC962 /* MFMHOEquipSetSearchMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
